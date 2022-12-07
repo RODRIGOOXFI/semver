@@ -8,3 +8,11 @@ preRelease {
         "alpha.${((it - ~/^alpha\./) as int) + 1}"
     }
 }
+
+autobump {
+    majorPattern = ~/(?m)^breaking\]$/
+    minorPattern = ~/(?m)^feature\]$/
+    patchPattern = ~/(?m)^bugfix\]$/
+    newPreReleasePattern = ~/(?m)^\[make-new-pre-release\]$/
+    promoteToReleasePattern = ~/(?m)^\[promote-to-release\]$/
+}
