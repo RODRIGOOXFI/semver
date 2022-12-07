@@ -2,7 +2,11 @@ plugins {
     id 'java'
 }
 
-
+tag {
+    message {
+        "Project: ${project.name} version: ${version}"
+    }
+}
 
 repositories {
     mavenCentral()

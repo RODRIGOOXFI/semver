@@ -4,6 +4,12 @@ plugins {
 
 group 'org.example'
 
+tag {
+    message {
+        "Project: ${project.name} version: ${version}"
+    }
+}
+
 repositories {
     mavenCentral()
 }
