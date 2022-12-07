@@ -1,0 +1,18 @@
+startingVersion = '2.0.0'
+tagPrefix = 'm2@'
+tagPattern = ~/^m2@/
+preRelease {
+    startingVersion = 'alpha.0'
+    pattern = /alpha/
+    bump = {
+        "alpha.${((it - ~/^alpha\./) as int) + 1}"
+    }
+}
+
+autobump {
+    majorPattern = ~/^breaking\W/
+    minorPattern = ~/^feature\W/
+    patchPattern = ~/^fix\W/
+    newPreReleasePattern = ~/^RC\W/
+    promoteToReleasePattern = ~/^release\W$/
+}
