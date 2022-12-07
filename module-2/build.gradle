@@ -1,14 +1,18 @@
+buildscript {
+    repositories {
+        mavenCentral() // or gradlePluginPortal()
+    }
+    dependencies {
+        classpath("com.dipien:semantic-version-gradle-plugin:1.4.0")
+    }
+}
+
+
 plugins {
     id 'java'
 }
 
-group 'org.example'
-
-tag {
-    message {
-        "Project: ${project.name} version: ${version}"
-    }
-}
+version = "2.0.0" // Assign your project version here
 
 repositories {
     mavenCentral()

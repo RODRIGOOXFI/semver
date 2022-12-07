@@ -2,11 +2,7 @@ plugins {
     id 'java'
 }
 
-tag {
-    message {
-        "Project: ${project.name} version: ${version}"
-    }
-}
+version = "1.0.0" // Assign your project version here
 
 repositories {
     mavenCentral()
