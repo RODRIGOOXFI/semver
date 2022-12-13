@@ -4,7 +4,7 @@ plugins {
 
 version = "2.0.0" // Assign your project version here
 
-apply plugin: "com.dipien.semantic-version"
+apply plugin: "com.rodevs.semantic-version"
 
 repositories {
     mavenCentral()

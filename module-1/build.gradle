@@ -3,9 +3,9 @@ plugins {
     id 'maven-publish'
 }
 
-version = "1.0.0" // Assign your project version here
+version = "5.1.0" // Assign your project version here
 
-apply plugin: "com.dipien.semantic-version"
+apply plugin: "com.rodevs.semantic-version"
 
 repositories {
     mavenCentral()

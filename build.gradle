@@ -1,9 +1,12 @@
 buildscript {
     repositories {
-        mavenLocal() // or gradlePluginPortal()
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/RODEVS/semantic-version-gradle-plugin")
+        }
     }
     dependencies {
-        classpath("com.dipien:semantic-version-gradle-plugin:1.4.0-SNAPSHOT")
+        classpath("com.rodevs.semantic-version:semantic-version-gradle-plugin:2.0.0")
     }
 }
 
@@ -12,11 +15,6 @@ plugins {
 }
 
 group 'org.example'
-
-repositories {
-    mavenLocal()
-    mavenCentral()
-}
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'

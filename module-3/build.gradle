@@ -4,7 +4,7 @@ plugins {
 
 version = "3.0.0" // Do not modify this version manually
 
-apply plugin: "com.dipien.semantic-version"
+apply plugin: "com.rodevs.semantic-version"
 
 repositories {
     mavenCentral()
